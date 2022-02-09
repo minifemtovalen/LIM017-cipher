@@ -1,0 +1,10 @@
+body {
+  background-color: white;
+  font-family: 'Open Sans';
+}
+main {
+  color: gray;
+}
+main > h3 {
+  color: #b6006c;
+}
