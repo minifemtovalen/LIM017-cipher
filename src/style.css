@@ -23,12 +23,29 @@ button#reverse-btn {
   height: 32px;
   align-self: center;
   justify-self: center;
+  margin-top: 6em;
+  border-radius: 6px;
+  color: rgb(104, 104, 104);
+  background-color: rgba(255, 255, 255, 0.884);
+  cursor: pointer;
+  border: 1px solid gray;
+  transition: all 300ms ease;
 }
+button#reverse-btn > img {
+  width: 16px;
+  height: auto;
+}
+button#reverse-btn:hover {
+  box-shadow: 0px 0px 6px 1px #b6006c;
+  transform: scale(1.1);
+}
+
 .input-container > textarea {
   height: 200px;
   padding:16px 20px;
   font-size: 14px;
   color: #b6006c;
+  border-radius: 8px;
 }
 h1 {
   text-align: center;
@@ -47,6 +64,6 @@ input#offset {
 }
 footer {
   text-align: center;
-  padding: 6em;
+  padding: 4em;
   color: #b6006c;
 }

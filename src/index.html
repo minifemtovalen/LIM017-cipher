@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codebreaker</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
   </head>
   <body>
     <main>
-      <h1>this is a title</h1>
-      <p>this is a description</p>
+      <h1>Mensajería Cifrada de Emergencia</h1>
+      <p>Mediante un servicio de mensajeria cifrado,<br> la persona en riesgo puede cifrar su mensaje de manera directa y confidencial,<br> para asi ser descifrado por nuestro equipo y realizar la denuncia.</p>
       <div id="main">
         <section id="cipher">
           <div class="input-container">
-            <label for="text-msg">Escribe el mensaje que quieres cifrar/descifrar</label>
+            <label for="text-msg">1) Escribe el mensaje que quieres cifrar/descifrar</label>
             <textarea id="text-msg" name="text-msg"></textarea>
           </div>
-          <button id="reverse-btn">revertir</button>
+          <button id="reverse-btn" type="button">
+            <img src="./img/arrow-right-arrow-left-solid.svg">
+          </button>
           <div class="input-container">
-            <label for="final-msg">Resultado</label>
-            <textarea id="final-msg" name="final-msg"></textarea>
+            <label for="final-msg">3)Resultado</label>
+            <textarea id="final-msg" name="final-msg" placeholder="Asi se vera tu mensaje" readonly></textarea>
           </div>
         </section>
         <section>
           <div class="input-container">
             <input value="1" type="number" name="offset" id="offset">
-            <label>Ingresa el numero de espacios para  cifrar/descifrar</label>
+            <label>2) Ingresa el numero de espacios para cifrar/descifrar</label>
           </div>
         </section>
 
