@@ -5,9 +5,8 @@
     <title>codebreaker</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -23,19 +22,19 @@
             <img src="./img/arrow-right-arrow-left-solid.svg">
           </button>
           <div class="input-container">
-            <label for="final-msg">3)Resultado</label>
+            <label for="final-msg">3) Resultado</label>
             <textarea id="final-msg" name="final-msg" placeholder="Asi se vera tu mensaje" readonly></textarea>
           </div>
         </section>
         <section>
           <div class="input-container">
-            <input value="1" type="number" name="offset" id="offset">
+            <input value="1" type="number" min="1" max="33" name="offset" id="offset">
             <label>2) Ingresa el numero de espacios para cifrar/descifrar</label>
           </div>
         </section>
-
       </div>
       <footer>Hecho con &#10084;&#65039; por Valentina Patti para Laboratoria LIM017</footer>
     <script src="index.js" type="module"></script>
+    </main>
   </body>
-</html>
+  </html>
