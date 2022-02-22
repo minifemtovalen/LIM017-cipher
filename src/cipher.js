@@ -1,5 +1,8 @@
 const cipher = {
   encode: (offset, msg) => {
+    if (typeof msg !== 'string' || !offset) {
+      throw TypeError('invoked with wrong argument types')
+    }
     const charArr = msg.toUpperCase();
     let cipherWord = '';
     for (let i = 0; i < charArr.length; i++) {
@@ -15,6 +18,9 @@ const cipher = {
     return cipherWord;
   },
   decode: (offset, msg) => {
+    if (typeof msg !== 'string' || !offset) {
+      throw TypeError('invoked with wrong argument types')
+    }
     const charArr = msg.toUpperCase();
     let decodedWord = '';
     for (let i = 0; i < charArr.length; i++) {
