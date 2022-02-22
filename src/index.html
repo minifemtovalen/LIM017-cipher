@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header><h1>Mensajería Cifrada de Emergencia</h1>
+    </header>
     <main>
-      <h1>Mensajería Cifrada de Emergencia</h1>
       <p>Mediante un servicio de mensajeria cifrado,<br> la persona en riesgo puede cifrar su mensaje de manera directa y confidencial,<br> para asi ser descifrado por nuestro equipo y realizar la denuncia.</p>
       <div id="main">
         <section id="cipher">
@@ -18,7 +19,7 @@
             <label for="text-msg">1) Escribe el mensaje que quieres cifrar/descifrar</label>
             <textarea id="text-msg" name="text-msg"></textarea>
           </div>
-          <button id="reverse-btn" type="button">
+          <button id="switch-btn" type="button">
             <img src="./img/arrow-right-arrow-left-solid.svg">
           </button>
           <div class="input-container">
@@ -30,6 +31,7 @@
           <div class="input-container">
             <input value="1" type="number" min="1" max="33" name="offset" id="offset">
             <label>2) Ingresa el numero de espacios para cifrar/descifrar</label>
+            <input type="reset" id="reset-btn" value="Limpiar">
           </div>
         </section>
       </div>
